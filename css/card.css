@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* MAIN */
+main {
+  min-height: 100vh;
+  background-image: url(../images/Group7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.href {
+  display: flex;
+  gap: 40px;
+  margin-right: auto;
+  margin-left: 40px;
+}
+
+.nav-href {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-us {
+  border: 2px #ffffff solid;
+  border-radius: 24px;
+  padding: 10px 25px;
+  color: #ffffff;
+}
+
+/* CONTENT */
+.salom {
+  display: flex;
+  gap: 50px;
+  padding: 60px 0;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+/* LEFT */
+.left h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.left p {
+  color: #ff5c5c;
+  margin-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #6fbcbc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+/* RIGHT */
+.right input,
+.right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #6fbcbc;
+  color: white;
+  outline: none;
+}
+
+.right textarea {
+  height: 80px;
+  resize: none;
+}
+
+.right button {
+  padding: 10px 25px;
+  border: none;
+  background: white;
+  color: #0f5c5c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background: #ddd;
+}
+
+/* FOOTER */
+.bottom {
+  background: #002529;
+  padding: 40px 0;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-icon {
+  margin-right: 80px;
+}
+
+.bottom_text p {
+  font-size: 15px;
+  color: grey;
+  line-height: 25px;
+}
+
+.bottom-href {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.href_bottom {
+  color: grey;
+  text-align: right;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .salom {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .href {
+    display: none;
+  }
+}
